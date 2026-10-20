@@ -1,0 +1,55 @@
+[general]
+
+import = ["~/.config/alacritty/colors.toml"]
+
+[window]
+
+padding.x = 4
+padding.y = 4
+decorations = "Full"
+decorations_theme_variant = "Dark"
+opacity = 0.93
+
+[font]
+normal.family = "GohuFont 11 Nerd FOnt"
+#normal.family = "PxPlus ToshibaTxL1 8x16"
+#normal.style = "Regular"
+
+bold.family = "PxPlus ToshibaTxL1 8x16"
+bold.style = "Bold"
+
+italic.family = "PxPlus ToshibaTxL1 8x16"
+italic.style = "Italic"
+
+bold_italic.family = "PxPlus ToshibaTxL1 8x16"
+
+size =11
+
+
+
+[colors.primary]
+
+background = "#1c1c1c"
+foreground = "#c2c2c2"
+
+[colors]
+cursor.text= "#000000"
+cursor.cursor = "#666666"
+draw_bold_text_with_bright_colors = true
+
+[[colors.indexed_colors]]
+index = 130 
+color = "#ed00ff" 
+
+[cursor]
+style.shape = "Underline"
+style.blinking = "On"
+thickness = 0.2
+blink_timeout = 0
+
+
+[[keyboard.bindings]]
+key = "v"
+mods = "Alt"
+#command ={program="ls" , args = []}
+command ="neofetch"
